@@ -23,6 +23,7 @@
   background-color: var(--background-clr);
   background-image: var(--background-img);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   font-variation-settings:
@@ -62,6 +63,8 @@
   font-size: clamp(3.0625rem, 1.8943rem + 4.9844vw, 4.0625rem);
   margin: 0 0 20px;
   font-weight: var(--main-font-weight);
+  outline: none;
+  text-decoration: none;
 }
 
 .header__title-rest {
@@ -248,52 +251,6 @@
   inline-size: 43px;
 }
 
-  .like-icon {
-    position: absolute;
-  }
-
-  .core {
-    fill: var(--core-clr-transparent);
-    transition: fill 0.3s 0.03s linear;
-  }
-
-  .main-body {
-    fill: var(--main-body-clr-transparent);
-    transition: fill 0.3s linear;
-  }
-
-  .contour {
-    fill: var(--contour-clr);
-  }
-
-  .sparks {
-    fill: var(--sparks-fill-clr-transparent);
-  }
-
-.like-icon.is-liked {
-  animation: icon-scaling 0.3s 0.1s ease-in reverse;
-}
-
-  .core {
-    animation: core-coloring 0.3s linear;
-    animation-fill-mode: forwards;
-  }
-
-  .main-body {
-    animation: main-body-coloring 0.3s 0.05s linear;
-    animation-fill-mode: forwards;
-  }
-
-  .contour {
-    animation: contour-coloring 0.3s 0.06s linear;
-    animation-fill-mode: forwards;
-  }
-
-  .sparks {
-    animation: sparks-coloring 0.3s 0.3s ease-in reverse;
-  }
-
-
 .card__icon-button:focus {
   outline: none;
 }
@@ -306,27 +263,29 @@
   .like-icon {
     .core {
       fill: var(--core-clr);
-      transition: fill 0.3s linear;}
-    
+      transition: fill 0.3s linear;
+    }
 
     .main-body {
       fill: var(--main-body-clr);
-      transition: fill 0.3s 0.05s linear;}}}
-    
-
-
+      transition: fill 0.3s 0.05s linear;
+    }
+  }
+}
 
 .card__icon-button:active {
   .like-icon {
     .core {
       fill: var(--core-active-clr);
-      transition: fill 0.3s linear;}}
-   
-     .main-body {
+      transition: fill 0.3s linear;
+    }
+  }
+
+  .main-body {
     fill: var(--main-body-active-clr);
-    transition: fill 0.3s 0.05s linear;}
-     }
- 
+    transition: fill 0.3s 0.05s linear;
+  }
+}
 
 .card__like-button {
   padding: 10px 0;
@@ -471,16 +430,6 @@
     margin: 0 2px 0 19px;
     block-size: 20px;
   }
-}
-
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  inline-size: 1px;
-  block-size: 1px;
-  clip-path: inset(50%);
-  white-space: nowrap;
 }
 
 .filter__bright {
