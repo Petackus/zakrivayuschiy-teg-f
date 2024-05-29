@@ -4,3 +4,79 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+@import 'variables';
+
+:root.theme-light {
+  --main-font: 'Inter-Variable';
+  --accent-font: 'Press Start 2P';
+  --main-font-weight: 400;
+  --main-font-bold-weight: 700;
+  --background-clr: #fff;
+  --accent-clr: rgb(0 0 0);
+  --accent-clr-transparent: rgb(0 0 0 / 60%);
+  --btn-text-clr: #fff;
+  --transform-time: 0.3s;
+  --transition-function: ease;
+  --border-width: 2px;
+  --sparks-fill-clr: #f00;
+  --sparks-fill-clr-transparent: rgb(255 0 0 / 0%);
+  --contour-clr: rgb(0 0 0);
+  --core-clr: rgb(0 0 0);
+  --core-clr-transparent: rgb(0 0 0 / 0%);
+  --main-body-clr: rgb(0 0 0);
+  --main-body-clr-transparent: rgb(0 0 0 / 0%);
+  --contour-active-clr: #f00;
+  --core-active-clr: #f00;
+  --main-body-active-clr: #f00;
+  --background-img: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+   repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px ), 
+   linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+}
+ 
+:root.theme-dark {
+  --main-font-weight: 465;
+  --main-font-bold-weight: 785;
+  --background-clr: #000;
+  --accent-clr: #00cc14;
+  --accent-clr-transparent:(#00cc14 / 60%);
+  --btn-text-clr: #00cc14;
+  --contour-clr: #00cc14;
+  --core-clr: #00cc14;
+  --core-clr-transparent:(#00cc14 / 0%);
+  --main-body-clr: #00cc14 ;
+  --main-body-clr-transparent:(#00cc14  / 0%);
+  --contour-active-clr: #f00;
+  --core-active-clr: #f00;
+  --main-body-active-clr: #f00;
+  --background-img:
+  repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
+  repeating-linear-gradient(180deg, #000 0 2px, transparent 2px 4px ),
+  linear-gradient(180deg, #007f0c 0.01%, #003406 100%);
+}
+
+
+ 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-font-weight: 465;
+    --main-font-bold-weight: 785;
+    --background-clr: #000;
+    --main-font-weight: 465;
+    --main-font-bold-weight: 785;
+    --background-clr: #000;
+    --accent-clr: rgb(0 204 20);
+    --accent-clr-transparent: rgb(0 204 20 / 60%);
+    --contour-clr: rgb(0 204 20);
+    --core-clr: rgb(0 204 20);
+    --core-clr-transparent: rgb(0 204 20 / 0%);
+    --main-body-clr: rgb(0 204 20);
+    --main-body-clr-transparent: rgb(0 204 20 / 0%);
+    --btn-text-clr: rgb(0 204 20);
+    --contour-active-clr: #f00;
+    --core-active-clr: #f00;
+    --main-body-active-clr: #f00;
+    --background-img: repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(180deg, #000 0 2px, transparent 2px 4px ),
+    linear-gradient(180deg, #007f0c 0.01%, #003406 100%);
+}
+  }

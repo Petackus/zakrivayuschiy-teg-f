@@ -1,1 +1,16 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --main-font: 'Inter', sans-serif;
+    --accent-font: 'Press Start 2P', sans-serif;
+    --main-font-weight: 400;
+    --main-font-bold-weight: 700;
+    --background-clr: #fff;
+    --accent-clr: rgb(0 0 0);
+    --background-img: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px ), linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+    --transform-time: 0.3s;
+    --transition-function: ease;
+    --border-width: 2px;
+    --btn-text-clr: #fff;
+    --accent-clr-transparent: rgb(0 0 0 / 60%);
+  }
