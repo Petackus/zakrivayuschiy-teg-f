@@ -1,99 +1,85 @@
-/* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-*/
 @keyframes moving {
-    0% {
-      inset-inline-start: -20px;
-    }
-  
-    100% {
-      inset-inline-start: -16px;
-    }
-  }
-  
-  @keyframes core-coloring {
-    100% {
-      fill: var(--core-active-clr);
-    }
-  }
-  
-  @keyframes main-body-coloring {
-    100% {
-      fill: var(--main-body-active-clr);
-    }
-  }
-  
-  @keyframes contour-coloring {
-    100% {
-      fill: var(--contour-active-clr);
-    }
-  }
-  
-  @keyframes icon-scaling {
-    100% {
-      transform: scale(1.5);
-      transform-origin: center;
-    }
-  }
-  
-  @keyframes sparks-coloring {
-    100% {
-      fill: var(--sparks-fill-clr);
-    }
+  0% {
+    inset-inline-start: -20px;
   }
 
-  .like-icon {
-    position: absolute;
+  100% {
+    inset-inline-start: -16px;
+  }
+}
 
-    .core {
-      fill: var(--core-clr-transparent);
-      transition: fill 0.3s 0.03s linear;
-    }
+@keyframes core-coloring {
+  100% {
+    fill: var(--core-active-clr);
+  }
+}
 
-    .main-body {
-      fill: var(--main-body-clr-transparent);
-      transition: fill 0.3s linear;
-    }
+@keyframes main-body-coloring {
+  100% {
+    fill: var(--main-body-active-clr);
+  }
+}
 
-    .contour {
-      fill: var(--contour-clr);
-    }
+@keyframes contour-coloring {
+  100% {
+    fill: var(--contour-active-clr);
+  }
+}
 
-    .sparks {
-      fill: var(--sparks-fill-clr-transparent);
-    }
+@keyframes icon-scaling {
+  100% {
+    transform: scale(1.5);
+    transform-origin: center;
+  }
+}
+
+@keyframes sparks-coloring {
+  100% {
+    fill: var(--sparks-fill-clr);
+  }
+}
+
+.like-icon {
+  position: absolute;
+
+  .core {
+    fill: var(--core-clr-transparent);
+    transition: fill 0.3s 0.03s linear;
   }
 
-  .like-icon.is-liked {
-    animation: icon-scaling 0.3s 0.1s alternate;
-
-    .core {
-      animation: core-coloring 0.3s linear;
-      animation-fill-mode: forwards;
-    }
-
-    .main-body {
-      animation: main-body-coloring 0.3s 0.05s linear;
-      animation-fill-mode: forwards;
-    }
-
-    .contour {
-      animation: contour-coloring 0.3s 0.06s linear;
-      animation-fill-mode: forwards;
-    }
-
-    .sparks {
-      animation: sparks-coloring 0.3s 0.3s alternate;
-    }
+  .main-body {
+    fill: var(--main-body-clr-transparent);
+    transition: fill 0.3s linear;
   }
+
+  .contour {
+    fill: var(--contour-clr);
+  }
+
+  .sparks {
+    fill: var(--sparks-fill-clr-transparent);
+  }
+}
+
+.like-icon.is-liked {
+  animation: icon-scaling 0.3s 0.1s alternate;
+
+  .core {
+    animation: core-coloring 0.3s alternate;
+    animation-fill-mode: forwards;
+  }
+
+  .main-body {
+    animation: main-body-coloring 0.3s 0.05s alternate;
+    animation-fill-mode: forwards;
+  }
+
+  .contour {
+    animation: contour-coloring 0.3s 0.06s alternate;
+    animation-fill-mode: forwards;
+  }
+
+  .sparks {
+    animation: sparks-coloring 0.3s 0.3s alternate;
+  }
+}
