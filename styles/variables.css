@@ -1,16 +1,31 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --main-font: 'Inter', sans-serif;
-    --accent-font: 'Press Start 2P', fantasy;
-    --main-font-weight: 400;
-    --main-font-bold-weight: 700;
-    --background-clr: #fff;
-    --accent-clr: rgb(0 0 0);
-    --background-img: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px ), linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
-    --transform-time: 0.3s;
-    --transition-function: ease;
-    --border-width: 2px;
-    --btn-text-clr: #fff;
-    --accent-clr-transparent: rgb(0 0 0 / 60%);
-  }
+  --main-font: 'Inter-Variable';
+  --accent-font: 'Press Start 2P';
+  --main-font-weight: 400;
+  --main-font-bold-weight: 700;
+  --background-clr: #fff;
+  --accent-clr: rgb(0 0 0);
+  --accent-clr-transparent: rgb(0 0 0 / 60%);
+  --btn-text-clr: #fff;
+  --transform-time: 0.3s;
+  --transition-function: ease;
+  --border-width: 2px;
+  --sparks-fill-clr: #f00;
+  --sparks-fill-clr-transparent: rgb(255 0 0 / 0%);
+  --contour-clr: rgb(0 0 0);
+  --core-clr: rgb(0 0 0);
+  --core-clr-transparent: rgb(0 0 0 / 0%);
+  --main-body-clr: rgb(0 0 0);
+  --main-body-clr-transparent: rgb(0 0 0 / 0%);
+  --contour-active-clr: #f00;
+  --core-active-clr: #f00;
+  --main-body-active-clr: #f00;
+  --background-img: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+   repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px ), 
+   linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+}
+
+
+
+  

@@ -52,10 +52,6 @@
     transition: fill 0.3s linear;
   }
 
-  .contour {
-    fill: var(--contour-clr);
-  }
-
   .sparks {
     fill: var(--sparks-fill-clr-transparent);
   }

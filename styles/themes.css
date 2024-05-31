@@ -28,8 +28,8 @@
   --contour-active-clr: #f00;
   --core-active-clr: #f00;
   --main-body-active-clr: #f00;
-  --background-img: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
-   repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px ), 
+  --background-img: repeating-linear-gradient(90deg, #d3d3d3,#d3d3d3 2px, transparent 2px, transparent 4px),
+   repeating-linear-gradient(180deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px ), 
    linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
 }
  
@@ -37,21 +37,23 @@
   --main-font-weight: 465;
   --main-font-bold-weight: 785;
   --background-clr: #000;
-  --accent-clr: #00cc14;
-  --accent-clr-transparent:(#00cc14 / 60%);
-  --btn-text-clr: #00cc14;
-  --contour-clr: #00cc14;
-  --core-clr: #00cc14;
-  --core-clr-transparent:(#00cc14 / 0%);
-  --main-body-clr: #00cc14 ;
-  --main-body-clr-transparent:(#00cc14  / 0%);
+  --main-font-weight: 465;
+  --main-font-bold-weight: 785;
+  --background-clr: #000;
+  --accent-clr: rgb(0 204 20);
+  --accent-clr-transparent: rgb(0 204 20 / 60%);
+  --contour-clr: rgb(0 204 20);
+  --core-clr: rgb(0 204 20);
+  --core-clr-transparent: rgb(0 204 20 / 0%);
+  --main-body-clr: rgb(0 204 20);
+  --main-body-clr-transparent: rgb(0 204 20 / 0%);
+  --btn-text-clr: rgb(0 204 20);
   --contour-active-clr: #f00;
   --core-active-clr: #f00;
   --main-body-active-clr: #f00;
-  --background-img:
-  repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
+  --background-img: repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
   repeating-linear-gradient(180deg, #000 0 2px, transparent 2px 4px ),
-  linear-gradient(180deg, #007f0c 0.01%, #003406 100%);
+  linear-gradient(180deg, #007f0c 0.01%, #004306 100%);
 }
 
 
@@ -77,6 +79,10 @@
     --main-body-active-clr: #f00;
     --background-img: repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
     repeating-linear-gradient(180deg, #000 0 2px, transparent 2px 4px ),
-    linear-gradient(180deg, #007f0c 0.01%, #003406 100%);
+    linear-gradient(180deg, #007f0c 0.01%, #004306 100%);
 }
   }
+
+  
+
+
