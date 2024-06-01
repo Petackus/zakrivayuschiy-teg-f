@@ -251,8 +251,8 @@
   transition: outline var(--transform-time);
   transition-timing-function: var(--transition-function);
   cursor: pointer;
-  inline-size: 43px;
-  block-size: 35px;
+  inline-size: 51px;
+  block-size: 39px;
 }
 
 .card__icon-button:focus {

@@ -39,22 +39,39 @@
   }
 }
 
-.like-icon {
-  position: absolute;
+.like-icon .core {
+	fill: transparent;
+	transition: fill 0.3s linear 0.03s;
+}
 
-  .core {
-    fill: var(--core-clr-transparent);
-    transition: fill 0.3s 0.03s linear;
-  }
+.like-icon:hover .core {
+	fill: var(--core-clr);
+	transition: fill 0.3s linear;
+}
 
-  .main-body {
-    fill: var(--main-body-clr-transparent);
-    transition: fill 0.3s linear;
-  }
+.like-icon .main-body {
+	fill: transparent;
+	transition: fill 0.3s linear;
+}
 
-  .sparks {
-    fill: var(--sparks-fill-clr-transparent);
-  }
+.like-icon:hover .main-body {
+	fill: var(--main-body-clr);
+	transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon:active .core {
+	fill: var(--sparks-fill-clr);
+	transition: fill 0.3s linear;
+}
+
+.like-icon:active .main-body {
+	fill: var(--main-body-active-clr);
+	transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon .contour {
+	fill: var(--contour-clr);
+	transition: fill 0.1s linear;
 }
 
 .like-icon.is-liked {
